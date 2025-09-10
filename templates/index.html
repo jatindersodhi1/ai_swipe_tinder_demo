@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>AI Tinder-like Swipe Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header><h1>🤖 AI Swipe (demo)</h1></header>
+
+    <main id="swipe-area">
+      <div class="card" id="profile-card">
+        <img id="profile-img" src="" alt="profile image"/>
+        <div class="meta">
+          <h2 id="profile-name"></h2>
+          <p id="profile-bio"></p>
+        </div>
+        <div class="actions">
+          <button id="left-btn" class="skip">⬅️ Skip</button>
+          <button id="right-btn" class="match">💖 Match</button>
+        </div>
+      </div>
+    </main>
+
+    <section id="chat-screen" class="hidden">
+      <div class="chat-header">
+        <button id="back-btn">← Back</button>
+        <h3 id="chat-with"></h3>
+      </div>
+      <div id="messages" class="messages"></div>
+      <div class="composer">
+        <input id="msg-input" placeholder="Say something..." autocomplete="off"/>
+        <button id="send-btn">Send</button>
+      </div>
+    </section>
+
+    <footer><small>Demo — AI-generated personas. No real people. Groq optional (set GROQ_API_KEY env var).</small></footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
